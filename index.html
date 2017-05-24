@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!doctype html>
 <html>
   <head>
@@ -15,48 +16,106 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Feng Mi's resume website</h1>
+        <h1>Feng Mi's Porject website</h1>
         <p></p>
 
 
-        <p class="view">work hard makes perfect!<a href="http://www.nicezuoye.site/"></a></p>
+        <p class="view"><h3>work hard makes perfect!</h3></p>
+        
+        <div class="container" >
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 >Welcome to my website</h2>
+        <h2 id="welcomeText"></h2>
+        
+        <button id = "login" type="button" class="btn btn-primary" onclick="signIn();"><i class="fa fa-google-plus"></i> Sign-In With Google</button>
+
+      </div>
+    </div>
+     </div><!-- /.container -->
+     
+     
+     
+     <div class="col-lg-6" id="uploadDiv">
+       <h2>Upload Comment:</h2>
+           <h3 id="uploadtext"></h3>
+          
+          <input type = "text" id = "imageCaption" class="upload-group" placeholder= "Write a comment">
+          <label class="upload-group">
+            upload picture
+            <input type ="file" class="upload-group" id="file">
+            </label>
+          <button  id = "uploadButton" class="upload-group" onclick="uploadFile()">SUBMIT</button>
+      </div>
+     
+     
 
       </header>
       <section>
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Personal dercription</h3>
+        <h2>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Personal dercription</h2>
 
-<p>My name is Feng Mi. I am a graduate student in the ECE deparment in the university of delaware. I have a good skills in C and C++ programing. I also know python and sql and I have use them to develop many projects. I want to find a internship this winter. Some of my projects I have developed is in the below and I hope you will like them </p>
+<p>My name is Feng Mi. I am a graduate student in the ECE deparment in the university of delaware. I have a good skills in web develop. I also know python and sql and I have use them to develop many projects. I want to find a internship this winter. Some of my projects I have developed is in the below and I hope you will like them.</p>
+
+
+
 
  
- <h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Here are some projects that I am developed in this semester and I hope you will like them.</h3>
+ <h1>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Projects:</h1>
 
-<p>The first project is Markovian-tweets. Consume a text file with sentences and produce a tweet (< 145 characters) with the style of the input text. </p>
+<p><h4>The first project is Text-twist clone.</h4></p>
+<P>Just a basic stack word game. Very easy to understand so no other description. In project 1.5, we swap our project with another team and do a security audit of their code.</p> 
+<p></p><a href="https://github.com/harderbetter/Text-twist-clone" ><img src="picture/github.png">source code</a></P>
 
- <p>The second project is Command-Line Minesweeper. That needs us write a function which consumes three arguments width height number_of_mines and generates a Minesweeper board internally. The board is a rectangle with a cover over each square. It will display this board to the user and prompt for a coordinate where they predict that no mine exists (format: x-coord y-coord 0-indexed). If they struck a mine then they lose (let them know). Otherwise uncover the selected square. If there are no adjacent mines then it should be blank and you uncover all adjacent squares too (chain-react this for every blank square). Otherwise show the number of mines in the surrounding 8 squares. If at somepoint only mines are covered then the user wins and the game ends. </p>
-<p>The third project is ,the toughest one ,Gee-Mail. Write a secure asynchronous (same-machine) message platform. Here is what is must do: When loaded prompt the user to sign-in or register. When a user registers get their username and password. When a user logs in ask for username and validate password. If login fails, choose your response. Once logged in, tell them the number of messages they have, list the users that have sent them a message. (You can limit this to one message from a given sender or add a timestamp or even a title to messages if you want a level 2.) Then ask if they want to read messages or write messages. When writing messages prompt them for the receipient username, the message, and a shared passphrase with that receipient. When they read a message let them select the message somehow, then prompt them for the shared passphrase with that receipient, then show a plaintext message. </p>
+ <p><h4>The second project is Basic Forum.</h4></p>
+ <P>This project need us to generate a forum system where a user can login, see a list of topics, see the messages under a topic, can add a message to any topic. A user should be able to delete one of their own messages and edit one of their own messages.
+</p> 
+<p></p><a href="https://github.com/harderbetter/basic-forum" ><img src="picture/github.png">source code</a></P>
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Knowlege base</h3>
 
-<p>I have a good understanding in network, artificial inteeligence, database, software requirement.</p>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>My dream</h3>
+   <h1 >Friends comment:</h1>
+     <div class ="container" id="contentHolder">
+      
+  </div>
 
-<p>Keep learning and develop project better and better is my dream.</p>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a> Contact</h3>
-<p>asdasdas@gmail.com<p>
-<p><a href="https://help.github.com/pages"></a>  <a href="https://github.com/contact"></a> </p>
-      </section>
-      <footer>
-        <p><small> <a href="https://github.com/orderedlist"></a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
+
+
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  
+<script>    
+    // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDDQFA9XOLWpQSR8lEy2yR4PpgpVvrVkE8",
+    authDomain: "realfinal-ff265.firebaseapp.com",
+    databaseURL: "https://realfinal-ff265.firebaseio.com",
+    projectId: "realfinal-ff265",
+    storageBucket: "realfinal-ff265.appspot.com",
+    messagingSenderId: "756310318827"
+  };
+    firebase.initializeApp(config);
+</script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <!-- Latest compiled and minified JavaScript -->
+ 
+  <script type="text/javascript" src="myjs.js"></script>
+
+
+
+
     
   </body>
 </html>
